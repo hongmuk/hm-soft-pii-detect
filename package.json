@@ -1,0 +1,51 @@
+{
+  "name": "@hm-soft/pii-detect",
+  "version": "0.1.0",
+  "description": "텍스트·로그에서 개인정보(주민번호·카드·전화·이메일) 탐지 및 자동 마스킹/라벨 치환 (의존성 0)",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "pii",
+    "privacy",
+    "redaction",
+    "개인정보",
+    "마스킹",
+    "log",
+    "security",
+    "korean",
+    "hmsoft"
+  ],
+  "author": "HMSOFT",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hongmuk/hm-soft-pii-detect.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hongmuk/hm-soft-pii-detect/issues"
+  },
+  "homepage": "https://github.com/hongmuk/hm-soft-pii-detect#readme"
+}
